@@ -1,0 +1,6 @@
+<div class="chat-messages" id="chatMessages">
+    <div class="message system">Welcome! I can help you find information from the Federal Register. What would you like to know?</div>
+    {% for message in messages %}
+    <div class="message {{ message.role }}">{{ message.content }}</div>
+    {% endfor %}
+</div> 
